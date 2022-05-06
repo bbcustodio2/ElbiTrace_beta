@@ -9,7 +9,6 @@
 
 
 <!-- PROJECT LOGO -->
-<br />
 <div align="center">
   <h3 align="center">ElbiTrace - Beta</h3>
 
@@ -46,7 +45,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![ElbiTrace][product-screenshot]](https://user-images.githubusercontent.com/60213750/167064594-cf13ee5d-163e-49be-84d8-040bd47b273b.png)
+![image](https://user-images.githubusercontent.com/60213750/167064594-cf13ee5d-163e-49be-84d8-040bd47b273b.png)
 
 This application is developed for the purpose of creating a Contact-tracing application using Bluetooth Low-Energy (BLE) Technology and location services. It is 
 part of my Special Problem, which is one of my requirements for graduation. This application has 3 main functionalities: 

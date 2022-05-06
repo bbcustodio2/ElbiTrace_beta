@@ -102,24 +102,24 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Usage
-Login Screen
+## Usage
+### Login Screen
 ![image](https://user-images.githubusercontent.com/60213750/167064300-8c3cdc55-b84e-42f9-afa9-cab3f90dd64a.png)
 * When you first initialize the application, the user will be taken to the login screen. A first-time user can login using their google accounts or by registering a new account by tapping the `Sign up` text at the bottom.
 
-Registration Screen
+### Registration Screen
 ![image](https://user-images.githubusercontent.com/60213750/167064489-1d52b040-afd2-4676-953d-ab4120c1bf66.png)
 * During signup, the user will be prompted to input their Display Name, email, and their password. They can also upload a profile image. 
 
-Home Screen
+### Home Screen
 ![image](https://user-images.githubusercontent.com/60213750/167064594-cf13ee5d-163e-49be-84d8-040bd47b273b.png)
 * Once the user has logged in, they will be directed to the Home Screen. As long as the User is logged in, they will be directed to this screen when they start the application. A user can update their status to POSITIVE or NEGATIVE in this screen. There are also two buttons at the bottom which will redirect the user to the other two functionalities of the application.
 
-Contact Tracing History Screen
+### Contact Tracing History Screen
 ![image](https://user-images.githubusercontent.com/60213750/167064820-7e6ba289-f131-47b1-a015-18a2d7316969.png)
 * This Screen displays all the user's recorded close contacts with other users. No information will be provided except for the Date, Time, and Status of the other user. When you tap the close contact record, it will redirect you to the google map page of the app where the close contact happened. All records will expire after 14 days. 
 
-Google Maps Screen
+### Google Maps Screen
 ![image](https://user-images.githubusercontent.com/60213750/167065026-1c626e45-8133-4755-aa57-abfc65f18570.png)
 * This screen will serve as a virus heatmap for the close contact traces. All close contact traces of the users with COVID-19 will be marked with red circles to indicate where those close contacts happened. 
 

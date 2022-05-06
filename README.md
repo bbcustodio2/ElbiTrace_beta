@@ -14,7 +14,6 @@
   <h3 align="center">ElbiTrace - Beta</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
     <br />
     <a href="https://github.com/bbcustodio2/ElbiTrace_beta"><strong>Explore the docs »</strong></a>
   </p>

@@ -129,7 +129,7 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@BienCustodio](https://twitter.com/your_username) - bbcustodio2@up.edu.ph
+Bien Christian Custodio - [@BienCustodio](https://twitter.com/your_username) - bbcustodio2@up.edu.ph
 
 Project Link: [https://github.com/bbcustodio2/ElbiTrace_beta](https://github.com/bbcustodio2/ElbiTrace_beta)
 

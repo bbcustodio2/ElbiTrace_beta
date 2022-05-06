@@ -93,7 +93,7 @@ This application is still in its early development stages and can only accomodat
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/bbcustodio2/ElbiTrace_beta.git
    ```
 3. put `app-release.apk` in your mobile device
 4. Install it in your phone.

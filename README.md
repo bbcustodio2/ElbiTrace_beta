@@ -85,9 +85,7 @@ This application is still in its early development stages and can only accomodat
   Android 5.0^ (Lollipop)
   ```
 
-### Installation and Usage
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+### Installation
 1. Clone the repo
    ```sh
    git clone https://github.com/bbcustodio2/ElbiTrace_beta.git

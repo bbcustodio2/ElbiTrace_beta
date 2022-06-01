@@ -34,30 +34,17 @@ Future<void> main() async {
   if (success) {
     await FlutterBackground.enableBackgroundExecution();
   }
-  if (globals.isLoggedIn) {
-    // Future.delayed(Duration.zero, () => startNearbyDetection());
-  }
   // Obtain shared preferences.
   final prefs = await SharedPreferences.getInstance();
   // Save an boolean value to 'repeat' key.
   globals.isFirstLogin = prefs.getBool('isFirstLogin');
-  // await prefs.remove('isFirstLogin');
-  print('isFirstLogin: ' + globals.isFirstLogin.toString());
 
   FirebaseAuth.instance.authStateChanges().listen((user) {
     if (user != null) {
-      print('user.uid:' + user.uid);
       startNearbyDetection(user);
     }
   });
-  // await AndroidAlarmManager.initialize();
   runApp(const MyApp());
-}
-
-void printHello() {
-  final DateTime now = DateTime.now();
-  final int isolateId = Isolate.current.hashCode;
-  print("[$now] Hello, world! isolate=${isolateId} function='$printHello'");
 }
 
 class MyApp extends StatelessWidget {

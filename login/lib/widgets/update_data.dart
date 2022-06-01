@@ -27,12 +27,9 @@ class _UpdateUserDataState extends State<UpdateUserData> {
   String? status;
   @override
   void initState() {
-    // TODO: implement initState
     updateButtonPressed = widget.updateButtonPressed;
 
     UserModel currentUser = widget.currentUser;
-    print(currentUser.status);
-    // if (currentUser.status == 'EXPOSED') status = 'POSITIVE';
     super.initState();
   }
 
@@ -106,8 +103,6 @@ class _UpdateUserDataState extends State<UpdateUserData> {
                     final DateTime time_marker =
                         currentUser.checkedPositiveTime!.toDate();
                     final time_difference = now.difference(time_marker).inDays;
-                    print('time_difference: ' +
-                        currentUser.checkedPositive.toString());
                     if (currentUser.checkedPositive! && time_difference < 14) {
                       showAlert(context);
                     } else {

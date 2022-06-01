@@ -74,26 +74,6 @@ void startNearbyDetection(User user) async {
   }
 }
 
-/// Called upon Connection request (on both devices)
-/// Both need to accept connection to start sending/receiving
-// void onConnectionInit(String id, ConnectionInfo info) async {
-//   setState(() {
-//     endpointMap[id] = info;
-//     print(endpointMap.toString());
-//   });
-//   try {
-//     await Nearby().acceptConnection(
-//       id,
-//       onPayLoadRecieved: (endid, payload) async {
-//         print('Functionality not needed. Payload Received.');
-//       },
-//     );
-//     print('devices: ' + endpointMap.toString());
-//   } catch (e) {
-//     print(e);
-//   }
-// }
-
 void validateDevice(String deviceName, User user) async {
   if (!inProgressIds.contains(deviceName)) {
     inProgressIds.add(deviceName);
@@ -102,7 +82,6 @@ void validateDevice(String deviceName, User user) async {
   }
   Fluttertoast.showToast(
       msg: 'Device: ' + deviceName + ' Time: ' + DateTime.now().toString());
-  print('Device: ' + deviceName + ' Time: ' + DateTime.now().toString());
   await Future.delayed(const Duration(seconds: 900));
   List idList = [];
   endpointMap.forEach((key, value) {
@@ -110,14 +89,11 @@ void validateDevice(String deviceName, User user) async {
       idList.add(value);
     }
   });
-  print('done with: ' + deviceName);
   inProgressIds.remove(deviceName);
   if (idList.contains(deviceName)) {
     Fluttertoast.showToast(
         msg: 'internal timer: device.deviceName, Time: ' +
             DateTime.now().toString());
-    print('internal timer: device.deviceName, Time: ' +
-        DateTime.now().toString());
     if (deviceName != user.uid) {
       SendData(deviceName);
     }
